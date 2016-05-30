@@ -132,19 +132,10 @@ $(document).ready(function () {
 </ul>
 <p>The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset.</p>
 <p>First we read the data and assign it to a variable data, redefining dates characters to dates class.</p>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: 'dplyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(lattice)
-library(ggplot2)</code></pre>
-<pre><code>## Warning: package 'ggplot2' was built under R version 3.2.4</code></pre>
-<pre class="r"><code>data&lt;-read.csv(&quot;activity.csv&quot;)
+<pre class="r"><code>library(dplyr)
+library(lattice)
+library(ggplot2)
+data&lt;-read.csv(&quot;activity.csv&quot;)
 data$date&lt;-as.Date(data$date)</code></pre>
 </div>
 <div id="average-number-of-steps-taken-per-day." class="section level2">
